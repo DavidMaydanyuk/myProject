@@ -1,11 +1,16 @@
-import Card from "./components/Card";
+import Card, { CardVariant } from "./components/Card";
 
 export default function App() {
   return (
     <div>
-      <Card width="200" color="red"/>
-      <div>hello</div>
-      <div>DAVID</div>
+      <Card
+        onClick={() => console.log("cklokrd")}
+        variant={CardVariant.outlined}
+        width="200px"
+        height="200px"
+      >
+        <button>clik</button>
+      </Card>
     </div>
   );
 }
