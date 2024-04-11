@@ -9,8 +9,8 @@ interface CardProps {
   width?: string;
   height?: string;
   variant: CardVariant;
-  children: React.ReactChild | React.ReactNode;
-  onClick: () => void;
+  children?: React.ReactChild | React.ReactNode;
+  onClick?: () => void;
 }
 
 const Card: FC<CardProps> = ({ width, height, variant, children, onClick }) => {
